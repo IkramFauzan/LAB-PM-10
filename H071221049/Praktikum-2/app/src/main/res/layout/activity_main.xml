@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#265073"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/selectImage"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:onClick="selectPicture"
+            android:src="@drawable/iconpict"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.126" />
+
+        <EditText
+            android:id="@+id/Nama"
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"
+            android:layout_height="wrap_content"
+            android:textColor="#F1FADA"
+            android:textColorHint="#F1FADA"
+            android:hint="Nama" />
+
+        <EditText
+            android:id="@+id/Uname"
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:textColorHint="#F1FADA"
+            android:textColor="#F1FADA" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_margin="30dp"
+            android:backgroundTint="#2D9596"
+            android:textColor="#F1FADA"
+            android:text="Submit"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

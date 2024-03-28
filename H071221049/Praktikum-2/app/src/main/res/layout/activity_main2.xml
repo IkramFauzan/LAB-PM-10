@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#265073"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Add Note"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_gravity="left"
+        android:layout_margin="20dp"
+        android:textColor="#F1FADA"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/frame"
+        android:layout_margin="10dp"
+        android:layout_height="150dp">
+
+        <EditText
+            android:id="@+id/note1"
+            android:hint="Title"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColorHint="#F1FADA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/note2"
+            android:hint="Content"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColorHint="#F1FADA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:backgroundTint="#2D9596"
+        android:textColor="#F1FADA"
+        android:layout_margin="20dp"
+        android:text="Save"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
