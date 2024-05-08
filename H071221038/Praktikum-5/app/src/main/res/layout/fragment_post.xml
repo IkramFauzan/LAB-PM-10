@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Fragment.PostFragment"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/baseline_add_photo_alternate_24"
+            android:layout_gravity="center"
+            android:onClick="selectImage"
+            android:scaleType="centerCrop"
+            android:layout_margin="20dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Masukkan Deskripsi"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btn_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="ADD POST"
+            android:backgroundTint="@color/black"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

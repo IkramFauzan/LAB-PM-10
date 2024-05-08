@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ProfileFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/white"
+        android:textAlignment="textStart" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="189dp"
+        android:layout_height="247dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="150dp"
+        android:src="@drawable/otaku" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ardhian"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Information System"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="-10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp" />
+</FrameLayout>

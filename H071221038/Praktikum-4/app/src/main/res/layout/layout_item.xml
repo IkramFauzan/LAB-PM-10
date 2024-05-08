@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_menu"
+    android:layout_margin="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/idProfile"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/home_iv_profile"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/ic_launcher_background">
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:id="@+id/home_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/blue"
+                android:layout_toRightOf="@id/home_iv_profile"/>
+
+            <TextView
+                android:id="@+id/home_tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="username"
+                android:layout_below="@id/home_tv_name"
+                android:layout_marginLeft="30dp"
+                android:textStyle="italic"
+                android:textSize="15sp"
+                android:textColor="@color/gray"
+                android:layout_toRightOf="@id/home_iv_profile"/>
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/btn_delete"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/card"
+            android:backgroundTint="@color/red"
+            android:src="@drawable/baseline_delete_outline_24"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/home_tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Lorem Ipsum"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:padding="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/home_iv_post"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:src="@drawable/ic_launcher_background"
+
+        android:scaleType="centerCrop"
+        android:layout_margin="20dp"
+        />
+
+
+</LinearLayout>
