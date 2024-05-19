@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragment.PostinganFragment">
+
+    <RelativeLayout
+        android:id="@+id/rv_header"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="335dp"
+            android:layout_height="40dp"
+            android:text="Add Post"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_gambar"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/baseline_add_photo_alternate_24"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="85dp"/>
+
+    <TextView
+        android:id="@+id/tv_konten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@id/iv_gambar"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="80dp"/>
+
+        <EditText
+            android:id="@+id/et_konten"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:hint="Description"
+            android:maxLines="10"
+            android:layout_marginStart="15dp"
+            android:layout_below="@id/tv_konten"
+            android:scrollbars="vertical"
+            android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/btn_posting"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_konten"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#9CAFAA"
+        android:text="ADD POST"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/navigation" />
+
+</RelativeLayout>

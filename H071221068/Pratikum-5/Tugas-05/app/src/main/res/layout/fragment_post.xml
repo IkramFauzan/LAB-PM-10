@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".PostFragment">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/white"
+        android:textAlignment="textStart" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Post"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Konten"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:layout_gravity="start"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <View
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/ed_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Konten"
+        android:textColor="@color/black"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Pilih Gambar"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:layout_gravity="start"
+        android:layout_marginTop="350dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <View
+
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/white"
+        />
+
+    <ImageView
+        android:id="@+id/iv_upl"
+        android:layout_width="93dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="440dp"
+        android:src="@drawable/baseline_photo_camera_24"
+        android:layout_marginStart="150dp"/>
+
+    <Button
+        android:id="@+id/btn_posting"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="POSTING"
+        android:layout_marginTop="580dp"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="#4CCD99"/>
+
+</FrameLayout>

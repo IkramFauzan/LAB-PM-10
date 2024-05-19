@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/satu"
+    tools:context=".fragment.PostinganFragment">
+
+    <RelativeLayout
+        android:id="@+id/rv_header"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/tiga">
+
+        <TextView
+            android:layout_width="335dp"
+            android:layout_height="40dp"
+            android:text="Add Post"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_gambar"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/rv_header"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="78dp"
+        android:src="@drawable/icon_tambah_foto" />
+
+    <TextView
+        android:id="@+id/tv_konten"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_gambar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="134dp"
+        android:text="Description"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_konten"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/tv_konten"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="31dp"
+        android:hint="Masukkan Konten..."
+        android:inputType="textMultiLine"
+        android:maxLines="10"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/btn_posting"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_konten"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/dua"
+        android:text="ADD POST"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/navigation" />
+
+</RelativeLayout>
